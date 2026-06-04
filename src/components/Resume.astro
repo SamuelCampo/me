@@ -1,0 +1,1219 @@
+---
+// Resume.astro - Samuel Campo Portfolio
+---
+
+<nav class="navbar">
+  <div class="nav-container">
+    <span class="nav-logo">SAMUEL<span class="text-accent">.CAMPO</span></span>
+    <div class="nav-links">
+      <a href="#perfil" class="nav-link">Inicio</a>
+      <a href="#habilidades" class="nav-link">Servicios</a>
+      <a href="#experiencia" class="nav-link">Experiencia</a>
+      <a href="#educacion" class="nav-link">Educación</a>
+      <a href="#contacto" class="nav-btn">Hablemos</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="greeting-badge">
+        <span class="dot-blink"></span>
+        Hello There!
+      </div>
+      <h1 class="hero-title">
+        Innovative <span class="text-accent">IT Solutions</span> That Drive Results
+      </h1>
+      <p class="hero-subtitle">
+        Soy Samuel Campo, Desarrollador de Software con más de 8 años de experiencia construyendo backend de alto rendimiento, sistemas en tiempo real y aplicaciones móviles escalables.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn-solid">
+          <span>Contacto</span>
+          <span class="btn-icon">➔</span>
+        </a>
+        <a href="#experiencia" class="btn-outline">
+          <span>Ver Trayectoria</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="hero-right">
+      <div class="blob-wrapper">
+        <div class="organic-blob"></div>
+        <div class="chart-box">
+          <h3 class="chart-box-title">Equilibrio Técnico</h3>
+          <div class="chart-container">
+            <canvas id="skillsRadar"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Ticker Ribbon / Marquee -->
+<section class="ticker-section">
+  <div class="ticker-wrapper">
+    <div class="ticker-track">
+      <span>Node.js</span> <span class="arrow">▼</span>
+      <span>WebSockets</span> <span class="arrow">▼</span>
+      <span>React Native</span> <span class="arrow">▼</span>
+      <span>Laravel</span> <span class="arrow">▼</span>
+      <span>Docker</span> <span class="arrow">▼</span>
+      <span>AWS Cloud</span> <span class="arrow">▼</span>
+      <span>PostgreSQL</span> <span class="arrow">▼</span>
+      <span>TypeScript</span> <span class="arrow">▼</span>
+      
+      <!-- Duplicado para loop sin cortes -->
+      <span>Node.js</span> <span class="arrow">▼</span>
+      <span>WebSockets</span> <span class="arrow">▼</span>
+      <span>React Native</span> <span class="arrow">▼</span>
+      <span>Laravel</span> <span class="arrow">▼</span>
+      <span>Docker</span> <span class="arrow">▼</span>
+      <span>AWS Cloud</span> <span class="arrow">▼</span>
+      <span>PostgreSQL</span> <span class="arrow">▼</span>
+      <span>TypeScript</span> <span class="arrow">▼</span>
+    </div>
+  </div>
+</section>
+
+<main class="main-content">
+  <!-- Perfil / Services Intro Section -->
+  <section id="habilidades" class="services-section">
+    <div class="services-header">
+      <div class="header-left">
+        <span class="section-label">Habilidades</span>
+        <h2 class="section-title">Delivering Value Through My Stack</h2>
+      </div>
+      <div class="header-right">
+        <a href="#contacto" class="view-all-link">Solicitar Propuesta ➔</a>
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <div class="service-card">
+        <div class="service-icon-box">
+          <span>⚡</span>
+        </div>
+        <h3 class="service-card-title">Backend & Real-Time</h3>
+        <p class="service-card-desc">
+          Arquitecturas escalables y rápidas en Node.js, Express y Laravel. Especialidad en WebSockets y comunicación bidireccional inmediata.
+        </p>
+        <div class="service-tags">
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>Laravel</span>
+          <span>WebSockets</span>
+          <span>Socket.io</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card">
+        <div class="service-icon-box">
+          <span>📱</span>
+        </div>
+        <h3 class="service-card-title">Mobile & Frontend</h3>
+        <p class="service-card-desc">
+          Creación de aplicaciones móviles nativas multiplataforma con React Native. Desarrollo web rápido con React, Vue y TypeScript.
+        </p>
+        <div class="service-tags">
+          <span>React Native</span>
+          <span>React</span>
+          <span>Vue.js</span>
+          <span>TypeScript</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card">
+        <div class="service-icon-box">
+          <span>☁️</span>
+        </div>
+        <h3 class="service-card-title">Cloud & Infraestructura</h3>
+        <p class="service-card-desc">
+          Despliegues en contenedores Docker y orquestación. Administración de bases de datos PostgreSQL y MySQL, seguridad AWS IAM.
+        </p>
+        <div class="service-tags">
+          <span>PostgreSQL</span>
+          <span>Docker</span>
+          <span>AWS IAM</span>
+          <span>Linux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencia / About Us Section -->
+  <section id="experiencia" class="experience-section">
+    <div class="experience-grid">
+      <div class="exp-left-col">
+        <div class="avatar-blob-wrapper">
+          <div class="avatar-offset-circle"></div>
+          <div class="avatar-image-placeholder">
+            <span class="avatar-symbol">SC</span>
+          </div>
+          <div class="floating-badge text-badge">8+ Years Exp</div>
+        </div>
+      </div>
+      
+      <div class="exp-right-col">
+        <span class="section-label">Trayectoria</span>
+        <h2 class="section-title">The Story Behind Samuel's Code</h2>
+        <p class="exp-desc-paragraph">
+          He liderado proyectos tecnológicos críticos en telecomunicaciones y salud digital. Mi enfoque está en eliminar la pérdida de datos y optimizar flujos críticos mediante arquitecturas modernas.
+        </p>
+        
+        <!-- Pestañas de Roles -->
+        <div class="role-selector-tabs">
+          <button class="role-tab active" data-role="independent">Independiente</button>
+          <button class="role-tab" data-role="aytec">AYTEC SAS</button>
+          <button class="role-tab" data-role="hms">HMS Software</button>
+        </div>
+        
+        <!-- Contenedor de contenido de rol -->
+        <div id="role-display-box" class="role-display-box">
+          <!-- JS dynamic content -->
+        </div>
+
+        <!-- Estadísticas al final -->
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h4 class="stat-number">8+</h4>
+            <p class="stat-label">Años de Experiencia</p>
+          </div>
+          <div class="stat-item">
+            <h4 class="stat-number">15+</h4>
+            <p class="stat-label">Proyectos Completados</p>
+          </div>
+          <div class="stat-item">
+            <h4 class="stat-number">3+</h4>
+            <p class="stat-label">Roles Clave</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Educación -->
+  <section id="educacion" class="edu-section">
+    <div class="edu-card">
+      <div class="edu-left">
+        <span class="section-label dark">Educación</span>
+        <h2 class="edu-title">Formación Académica</h2>
+        <p class="edu-subtitle">Cimientos de ingeniería informática e investigación de flujos de datos.</p>
+      </div>
+      <div class="edu-right">
+        <div class="edu-item">
+          <span class="edu-years">2014 - 2017</span>
+          <h3 class="edu-item-title">Ingeniería Informática</h3>
+          <p class="edu-institution">IUT Antonio José de Sucre</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto / CTA -->
+  <section id="contacto" class="cta-section">
+    <div class="cta-box">
+      <h2 class="cta-title">¿Listo para impulsar tu próximo producto?</h2>
+      <p class="cta-text">Ponte en contacto para discutir vacantes de liderazgo, desarrollo sénior o consultorías técnicas.</p>
+      <div class="cta-buttons">
+        <a href="mailto:samuelcampo18@gmail.com" class="btn-solid green">
+          <span>Enviar Correo</span>
+          <span class="btn-icon">✉️</span>
+        </a>
+        <a href="tel:+584241222726" class="btn-outline white">
+          <span>Llamar por Teléfono</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2026 Samuel Campo. Todos los derechos reservados.</p>
+    <p>Diseño inspirado en WR Solutions</p>
+  </div>
+</footer>
+
+<style>
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+  }
+  
+  .text-accent {
+    color: var(--color-accent);
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition-fast);
+  }
+  
+  .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .nav-btn {
+    text-decoration: none;
+    background: var(--color-accent);
+    color: var(--color-slate-900);
+    padding: 0.6rem 1.4rem;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: var(--transition-smooth);
+  }
+  
+  .nav-btn:hover {
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 180px 2rem 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .greeting-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px dashed var(--color-accent);
+    color: var(--color-accent);
+    background: var(--color-accent-light);
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+  }
+  
+  .dot-blink {
+    width: 6px;
+    height: 6px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--color-accent);
+  }
+  
+  .hero-title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 580px;
+  }
+  
+  .hero-ctas {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn-solid {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #ffffff;
+    color: var(--bg-primary);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    transition: var(--transition-smooth);
+  }
+  
+  .btn-solid:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+  }
+  
+  .btn-solid.green {
+    background: var(--color-accent);
+    color: var(--bg-primary);
+  }
+  
+  .btn-solid.green:hover {
+    background: #ffffff;
+  }
+  
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    transition: var(--transition-smooth);
+  }
+  
+  .btn-outline:hover {
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+  }
+  
+  .btn-outline.white:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    background: var(--color-accent-light);
+  }
+
+  /* Right Side Blob & Chart */
+  .blob-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .organic-blob {
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    background: var(--color-accent);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    filter: blur(40px);
+    opacity: 0.35;
+    animation: blobMorph 10s ease-in-out infinite alternate;
+    z-index: 1;
+  }
+  
+  .chart-box {
+    position: relative;
+    z-index: 2;
+    background: rgba(18, 18, 18, 0.85);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 24px;
+    width: 90%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(16px);
+  }
+  
+  .chart-box-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .chart-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+
+  /* Ticker Ribbon / Marquee */
+  .ticker-section {
+    background: var(--color-accent);
+    padding: 1.25rem 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .ticker-wrapper {
+    width: 100%;
+    display: flex;
+  }
+  
+  .ticker-track {
+    display: flex;
+    gap: 3rem;
+    white-space: nowrap;
+    animation: tickerRun 25s linear infinite;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--color-slate-900);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .ticker-track span.arrow {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    opacity: 0.7;
+  }
+
+  /* Main container */
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+  }
+
+  /* General elements */
+  .section-label {
+    display: inline-block;
+    color: var(--color-accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  /* Services / Stack Section */
+  .services-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+  
+  .services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .view-all-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: var(--transition-fast);
+  }
+  
+  .view-all-link:hover {
+    color: #ffffff;
+    transform: translateX(4px);
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .service-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 3rem 2.25rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition-smooth);
+  }
+  
+  .service-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-accent-border);
+    box-shadow: 0 20px 40px rgba(197, 255, 0, 0.04);
+  }
+  
+  .service-icon-box {
+    width: 54px;
+    height: 54px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+  }
+  
+  .service-card-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+  }
+  
+  .service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .service-tags span {
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+
+  /* Experience Section (About Us Style) */
+  .experience-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .experience-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  
+  .avatar-blob-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar-offset-circle {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: var(--color-accent);
+    transform: translate(20px, 20px);
+    z-index: 1;
+  }
+  
+  .avatar-image-placeholder {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar-symbol {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--color-accent);
+    letter-spacing: -0.05em;
+  }
+  
+  .floating-badge {
+    position: absolute;
+    z-index: 3;
+    background: #ffffff;
+    color: var(--bg-primary);
+    padding: 0.5rem 1.2rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-badge {
+    bottom: 10%;
+    right: 5%;
+  }
+  
+  .exp-desc-paragraph {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .role-selector-tabs {
+    display: flex;
+    gap: 0.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 0.35rem;
+    border-radius: 9999px;
+    margin-bottom: 2rem;
+    max-width: fit-content;
+  }
+  
+  .role-tab {
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+  }
+  
+  .role-tab:hover {
+    color: #ffffff;
+  }
+  
+  .role-tab.active {
+    background: var(--color-accent);
+    color: var(--bg-primary);
+  }
+  
+  .role-display-box {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    padding: 2.25rem;
+    border-radius: 16px;
+    margin-bottom: 3rem;
+    min-height: 220px;
+  }
+  
+  :global(.role-fade-in) {
+    animation: slideIn 0.3s var(--ease-out-expo) forwards;
+  }
+  
+  :global(.role-header) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 1rem;
+  }
+  
+  :global(.role-title-text) {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  :global(.role-company) {
+    font-size: 0.85rem;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0.25rem;
+  }
+  
+  :global(.role-period) {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+  
+  :global(.role-desc) {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  :global(.role-projects-title) {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+  
+  :global(.role-projects-list) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  :global(.role-project-item) {
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  :global(.role-project-name) {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 0.25rem;
+  }
+  
+  :global(.role-project-desc) {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+  }
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-accent);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+
+  /* Educación Section */
+  .edu-section {
+    display: flex;
+  }
+  
+  .edu-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .section-label.dark {
+    color: var(--color-accent);
+  }
+  
+  .edu-title {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .edu-subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+  }
+  
+  .edu-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 2.5rem;
+    border-radius: 16px;
+  }
+  
+  .edu-years {
+    color: var(--color-accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .edu-item-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  
+  .edu-institution {
+    color: var(--text-secondary);
+    font-size: 1rem;
+  }
+
+  /* Contacto / CTA */
+  .cta-section {
+    text-align: center;
+  }
+  
+  .cta-box {
+    background: radial-gradient(circle at top right, var(--color-accent-light) 0%, transparent 60%);
+    border: 1px solid var(--border-color);
+    padding: 6rem 2rem;
+    border-radius: 28px;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    max-width: 600px;
+  }
+  
+  .cta-text {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  /* Footer */
+  .footer {
+    border-top: 1px solid var(--border-color);
+    padding: 3rem 2rem;
+    background: var(--bg-primary);
+    color: var(--text-muted);
+    font-size: 0.875rem;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  /* Keyframe Animations */
+  @keyframes tickerRun {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  
+  @keyframes blobMorph {
+    0% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 45% 55% 40% 60% / 50% 60% 40% 50%;
+    }
+    100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsivo */
+  @media (max-width: 960px) {
+    .nav-container {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .navbar {
+      height: auto;
+      padding: 1rem 0;
+      position: relative;
+    }
+    .hero {
+      padding-top: 60px;
+    }
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    .hero-title {
+      font-size: 2.75rem;
+    }
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+    .experience-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    .avatar-blob-wrapper {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    :global(.role-projects-list) {
+      grid-template-columns: 1fr;
+    }
+    .edu-card {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      padding: 2.5rem;
+    }
+    .cta-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
+
+<script>
+  // Data for work experience
+  const experienceData = {
+    independent: {
+      title: "Desarrollador Full-Stack",
+      company: "Independiente",
+      period: "Ene 2021 – Presente",
+      summary: "Creación de ecosistemas digitales completos (Web + Móvil + Backend) para sectores financieros, salud y telecomunicaciones.",
+      projects: [
+        { name: "Sistemas en Tiempo Real", desc: "Backend en Node.js conectado vía WebSocket para actualización instantánea de comandas en restaurantes." },
+        { name: "Plataforma Financiera", desc: "Sistema de préstamos con control de roles y conciliación de pagos automática." }
+      ]
+    },
+    aytec: {
+      title: "Director de Proyecto y Lead Developer",
+      company: "AYTEC SAS",
+      period: "Oct 2019 – Presente",
+      summary: "Liderazgo técnico orientado a la digitalización del sector salud, optimizando procesos críticos y eliminando pérdida de datos.",
+      projects: [
+        { name: "Ecosistema Móvil de Salud", desc: "App para control logístico y manejo de inventario de medicamentos en tiempo real." },
+        { name: "Telemedicina & Sockets", desc: "Sistema de atención médica con videollamadas y rastreo de flotas de ambulancias." }
+      ]
+    },
+    hms: {
+      title: "Desarrollador de Software",
+      company: "HMS SOFTWARE SAS",
+      period: "Ene 2018 – Oct 2019",
+      summary: "Soporte y modernización de sistemas integrales de salud mediante refactorización de código legado.",
+      projects: [
+        { name: "Módulos Críticos", desc: "Refactorización en PHP/CodeIgniter para admisión y facturación de pacientes." },
+        { name: "Historias Clínicas", desc: "Desarrollo de sistemas de gestión de datos clínicos sensibles y generación de informes." }
+      ]
+    }
+  };
+
+  // Render function for experience
+  function switchExperience(roleKey) {
+    const data = experienceData[roleKey];
+    const container = document.getElementById('role-display-box');
+    if (!container) return;
+
+    // Active classes
+    document.querySelectorAll('.role-tab').forEach(btn => {
+      if (btn.getAttribute('data-role') === roleKey) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    // Content html
+    container.innerHTML = `
+      <div class="role-fade-in">
+        <div class="role-header">
+          <div>
+            <h3 class="role-title-text">${data.title}</h3>
+            <p class="role-company">${data.company}</p>
+          </div>
+          <span class="role-period">${data.period}</span>
+        </div>
+        <p class="role-desc">${data.summary}</p>
+        <h4 class="role-projects-title">Proyectos Destacados</h4>
+        <div class="role-projects-list">
+          ${data.projects.map(p => `
+            <div class="role-project-item">
+              <h5 class="role-project-name">${p.name}</h5>
+              <p class="role-project-desc">${p.desc}</p>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  // Setup experience behavior
+  function initExperience() {
+    const tabs = document.querySelectorAll('.role-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        const role = e.currentTarget.getAttribute('data-role');
+        switchExperience(role);
+      });
+    });
+    switchExperience('independent');
+  }
+
+  // Radar chart implementation
+  function initChart() {
+    const canvas = document.getElementById('skillsRadar');
+    if (!canvas) return;
+
+    // @ts-ignore
+    new Chart(canvas, {
+      type: 'radar',
+      data: {
+        labels: ['Backend', 'Tiempo Real', 'Mobile', 'Frontend', 'Infraestructura', 'Liderazgo'],
+        datasets: [{
+          label: 'Nivel',
+          data: [95, 90, 85, 80, 75, 88],
+          backgroundColor: 'rgba(197, 255, 0, 0.12)',
+          borderColor: 'rgba(197, 255, 0, 1)',
+          pointBackgroundColor: 'rgba(197, 255, 0, 1)',
+          pointBorderColor: '#0a0a0a',
+          pointHoverBackgroundColor: '#0a0a0a',
+          pointHoverBorderColor: 'rgba(197, 255, 0, 1)',
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          r: {
+            beginAtZero: true,
+            max: 100,
+            ticks: {
+              display: false,
+              stepSize: 20
+            },
+            grid: {
+              color: 'rgba(255, 255, 255, 0.08)'
+            },
+            angleLines: {
+              color: 'rgba(255, 255, 255, 0.08)'
+            },
+            pointLabels: {
+              font: {
+                family: "'Outfit', sans-serif",
+                size: 11,
+                weight: '600'
+              },
+              color: '#9ca3af'
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            backgroundColor: '#171717',
+            titleColor: '#ffffff',
+            bodyColor: '#9ca3af',
+            titleFont: {
+              family: "'Outfit', sans-serif",
+              weight: 'bold'
+            },
+            bodyFont: {
+              family: "'Plus Jakarta Sans', sans-serif"
+            },
+            padding: 10,
+            borderColor: 'rgba(255, 255, 255, 0.08)',
+            borderWidth: 1,
+            cornerRadius: 8,
+            displayColors: false
+          }
+        }
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    initExperience();
+    initChart();
+  });
+</script>

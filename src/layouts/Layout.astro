@@ -1,23 +1,110 @@
 <!doctype html>
-<html lang="en">
+<html lang="es" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		
+		<title>Samuel Campo | Full-Stack & Mobile Developer</title>
+		<meta name="description" content="Hoja de vida profesional de Samuel Campo, Desarrollador de Software Full-Stack & Mobile especializado en Backend & Tiempo Real con más de 8 años de experiencia." />
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+		
+		<script src="https://cdn.jsdelivr.net/npm/chart.js" is:inline></script>
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
 
-<style>
+<style is:global>
+	:root {
+		--bg-primary: #0a0a0a;
+		--bg-secondary: #121212;
+		--bg-card: #171717;
+		--text-primary: #ffffff;
+		--text-secondary: #9ca3af;
+		--text-muted: #6b7280;
+		
+		--color-accent: #c5ff00;
+		--color-accent-hover: #b0e600;
+		--color-accent-light: rgba(197, 255, 0, 0.1);
+		--color-accent-border: rgba(197, 255, 0, 0.3);
+		
+		--color-slate-900: #0a0a0a;
+		--color-slate-800: #121212;
+		--color-slate-700: #262626;
+		--color-slate-100: #f5f5f4;
+		--color-slate-200: #e7e5e4;
+		
+		--border-color: rgba(255, 255, 255, 0.08);
+		
+		--font-display: 'Outfit', sans-serif;
+		--font-body: 'Plus Jakarta Sans', sans-serif;
+		
+		--ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+		--ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+		--ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+		
+		--transition-smooth: all 0.3s var(--ease-out-quart);
+		--transition-fast: all 0.15s var(--ease-out-quart);
+	}
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
 	html,
 	body {
-		margin: 0;
 		width: 100%;
-		height: 100%;
+		min-height: 100%;
+		background-color: var(--bg-primary);
+		color: var(--text-primary);
+		font-family: var(--font-body);
+		line-height: 1.6;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		
+		background-image: 
+			linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+		background-size: 50px 50px;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: var(--font-display);
+		font-weight: 700;
+		line-height: 1.25;
+		color: var(--text-primary);
+	}
+
+	/* Scrollbar Customization */
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+	::-webkit-scrollbar-track {
+		background: var(--bg-primary);
+	}
+	::-webkit-scrollbar-thumb {
+		background: #262626;
+		border-radius: 4px;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--color-accent);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		* {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+			scroll-behavior: auto !important;
+		}
 	}
 </style>
